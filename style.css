@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background-image: linear-gradient(to top right, rgb(247, 185, 220), rgb(246, 16, 146));
+}
+.grid-container {
+    /* background-color: rgb(10, 248, 169); */
+    /* height: 600px;
+    width: 900px; */
+    /* width: 100%; */
+    display: grid;
+    /* grid-template: repeat(3, 130px) / repeat(3, 1fr); */
+    grid-template: 80px 140px 140px 80px / 1fr 1fr 1fr;
+    gap: 10px 10px;
+}
+
+.grid-item {
+    background-color: rgb(88, 1, 88);
+    /* height: 130px;
+    width: 130px; */
+    color: rgb(251, 253, 253);
+    text-align: center;
+    /* font-size: 30px;
+    font-weight: 800; */
+    /* justify-self: center; */
+    place-items: center;
+    
+}
+
+.item-1 {
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1 /span 3;  /* this work same as upper 2 lines */
+    background-color: darkgray;
+    color: rgb(0, 11, 11);
+    font-size: 30px;
+    font-weight: 800;
+    /* justify-self: center; */
+    /* place-self: center; */
+    place-items: center;
+}
+
+.footer {
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1 /span 3;
+    background-color: darkgrey;
+    color: rgb(0, 11, 11);
+    font-size: 30px;
+    font-weight: 800;
+
+}
